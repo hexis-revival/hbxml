@@ -19,7 +19,7 @@ package main
 
 import (
     "os"
-    "github.com/yourusername/hbxml"
+    "github.com/hexis-revival/hbxml"
 )
 
 func main() {
@@ -46,7 +46,7 @@ package main
 
 import (
     "os"
-    "github.com/yourusername/hbxml"
+    "github.com/hexis-revival/hbxml"
 )
 
 func main() {
