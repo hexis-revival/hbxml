@@ -146,6 +146,25 @@ func (b *Beatmap) LowestBPM() float64 {
 	return lowest
 }
 
+// TotalLength returns the total length of the beatmap in seconds
+func (b *Beatmap) TotalLength() float64 {
+	return float64(b.HitObjects[len(b.HitObjects)-1].Offset) / 1000
+}
+
+// DrainLength returns the total length of the drain time in the beatmap in seconds
+func (b *Beatmap) DrainLength() float64 {
+	return b.TotalLength() - b.BreakLength()
+}
+
+// BreakLength returns the total length of breaks in the beatmap in seconds
+func (b *Beatmap) BreakLength() float64 {
+	var length float64
+	for _, brk := range b.Events.Breaks {
+		length += float64(brk.EndOffset-brk.Offset) / 1000
+	}
+	return length
+}
+
 // Read a beatmap from an io.Reader
 func NewBeatmap(r io.Reader) (beatmap *Beatmap, err error) {
 	beatmap = new(Beatmap)
