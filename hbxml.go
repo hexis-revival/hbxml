@@ -20,14 +20,17 @@ type Beatmap struct {
 	HitObjects   []HitObject   `xml:"hit-objects>hit-object"`
 }
 
+// Serialize a beatmap to an io.Writer
 func (b *Beatmap) Serialize(w io.Writer) error {
 	return xml.NewEncoder(w).Encode(b)
 }
 
+// Deserialize a beatmap from an io.Reader
 func (b *Beatmap) Deserialize(r io.Reader) error {
 	return xml.NewDecoder(r).Decode(b)
 }
 
+// FormatName returns a formatted string of the beatmap's name
 func (b *Beatmap) FormatName() string {
 	return fmt.Sprintf("%s - %s [%s]", b.Meta.Artist, b.Meta.Title, b.Meta.Creator)
 }
