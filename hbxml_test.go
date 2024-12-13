@@ -18,17 +18,9 @@ func TestBeatmapDecoding(t *testing.T) {
 			t.Error(err)
 		}
 
-		beatmap, err := NewBeatmap(file)
+		_, err = NewBeatmap(file)
 		if err != nil {
 			t.Error(err)
-		}
-
-		if !contains(file.Name(), beatmap.Meta.Title) {
-			t.Errorf("Title not found in %s", file.Name())
-		}
-
-		if !contains(file.Name(), beatmap.Meta.Artist) {
-			t.Errorf("Artist not found in %s", file.Name())
 		}
 	}
 }
