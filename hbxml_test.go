@@ -17,6 +17,7 @@ func TestBeatmapDecoding(t *testing.T) {
 		if err != nil {
 			t.Error(err)
 		}
+		defer file.Close()
 
 		_, err = NewBeatmap(file)
 		if err != nil {
