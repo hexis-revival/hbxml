@@ -94,3 +94,23 @@ type HitObject struct {
 	Points     []Point       `xml:"point"`
 	HitSounds  []string      `xml:"hit-sound"`
 }
+
+// IsCircle returns true if the hit object is a circle
+func (h *HitObject) IsCircle() bool {
+	return h.Type == HitCircle
+}
+
+// IsSlider returns true if the hit object is a slider
+func (h *HitObject) IsSlider() bool {
+	return h.Type == Slider
+}
+
+// IsSpinner returns true if the hit object is a spinner
+func (h *HitObject) IsSpinner() bool {
+	return h.Type == Spinner
+}
+
+// IsHold returns true if the hit object is a hold
+func (h *HitObject) IsHold() bool {
+	return h.Type == Hold
+}
