@@ -1,20 +1,6 @@
 package hbxml
 
-import "encoding/xml"
-
-type Beatmap struct {
-	XMLName      xml.Name      `xml:"beatmap"`
-	Version      string        `xml:"version,attr"`
-	Meta         Meta          `xml:"meta"`
-	General      General       `xml:"general"`
-	Difficulty   Difficulty    `xml:"difficulty"`
-	Editor       string        `xml:"editor"`
-	Events       Events        `xml:"events"`
-	TimingPoints []TimingPoint `xml:"timing-points>timing-point"`
-	Colors       []Combo       `xml:"colors>combo"`
-	HitObjects   []HitObject   `xml:"hit-objects>hit-object"`
-}
-
+// Meta is a struct that represents the metadata of a beatmap
 type Meta struct {
 	Title        string `xml:"title,attr"`
 	Artist       string `xml:"artist,attr"`
@@ -26,6 +12,7 @@ type Meta struct {
 	MapVersionID string `xml:"mapVersionId,attr"`
 }
 
+// General is a struct that represents the general settings of a beatmap
 type General struct {
 	AudioFilename         string  `xml:"audioFilename,attr"`
 	AudioLeadIn           int     `xml:"audioLeadIn,attr"`
@@ -37,6 +24,7 @@ type General struct {
 	LetterboxDuringBreaks bool    `xml:"letterboxDuringBreaks,attr"`
 }
 
+// Difficulty is a struct that represents the difficulty settings of a beatmap
 type Difficulty struct {
 	HPDrainRate       float64 `xml:"hpDrainRate,attr"`
 	CircleSize        float64 `xml:"circleSize,attr"`
@@ -46,21 +34,25 @@ type Difficulty struct {
 	SliderTickRate    float64 `xml:"sliderTickRate,attr"`
 }
 
+// Events is a struct that represents the events of a beatmap.
 type Events struct {
 	Backgrounds []Background `xml:"backgrounds>background"`
 	Breaks      []Break      `xml:"breaks>break"`
 }
 
+// Background is a struct that represents the background settings of a beatmap
 type Background struct {
 	Offset   int    `xml:"offset,attr"`
 	Filename string `xml:"filename,attr"`
 }
 
+// Break is a struct that represents the break settings of a beatmap
 type Break struct {
 	Offset    int `xml:"offset,attr"`
 	EndOffset int `xml:"endOffset,attr"`
 }
 
+// TimingPoint is a struct that represents the timing points of a beatmap
 type TimingPoint struct {
 	Inherited       bool    `xml:"inherited,attr"`
 	Offset          int     `xml:"offset,attr"`
@@ -72,12 +64,14 @@ type TimingPoint struct {
 	Special         bool    `xml:"special,attr"`
 }
 
+// Combo is a struct that represents the combo colors of a beatmap
 type Combo struct {
 	Red   int `xml:"red,attr"`
 	Green int `xml:"green,attr"`
 	Blue  int `xml:"blue,attr"`
 }
 
+// HitObject is a struct that represents the hit objects of a beatmap
 type HitObject struct {
 	Type       int      `xml:"type,attr"`
 	Offset     int      `xml:"offset,attr"`
@@ -94,6 +88,7 @@ type HitObject struct {
 	HitSounds  []string `xml:"hit-sound"`
 }
 
+// Point is a struct that represents the points of a hit object
 type Point struct {
 	X int `xml:"x,attr"`
 	Y int `xml:"y,attr"`
