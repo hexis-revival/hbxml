@@ -8,3 +8,12 @@ const (
 	Spinner   HitObjectType = 1 << iota
 	Hold      HitObjectType = 1 << iota
 )
+
+type HitSoundType int
+
+const (
+	Normal  HitSoundType = 1 << iota
+	Whistle HitSoundType = 1 << iota
+	Finish  HitSoundType = 1 << iota
+	Clap    HitSoundType = 1 << iota
+)
