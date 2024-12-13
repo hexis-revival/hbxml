@@ -35,6 +35,54 @@ func (b *Beatmap) FormatName() string {
 	return fmt.Sprintf("%s - %s [%s]", b.Meta.Artist, b.Meta.Title, b.Meta.Creator)
 }
 
+// TotalCircles returns the total number of circles in the beatmap
+func (b *Beatmap) TotalCircles() int {
+	var circles int
+	for _, obj := range b.HitObjects {
+		if obj.IsCircle() {
+			circles++
+		}
+	}
+	return circles
+}
+
+// TotalSliders returns the total number of sliders in the beatmap
+func (b *Beatmap) TotalSliders() int {
+	var sliders int
+	for _, obj := range b.HitObjects {
+		if obj.IsSlider() {
+			sliders++
+		}
+	}
+	return sliders
+}
+
+// TotalSpinners returns the total number of spinners in the beatmap
+func (b *Beatmap) TotalSpinners() int {
+	var spinners int
+	for _, obj := range b.HitObjects {
+		if obj.IsSpinner() {
+			spinners++
+		}
+	}
+	return spinners
+}
+
+func (b *Beatmap) TotalHolds() int {
+	var holds int
+	for _, obj := range b.HitObjects {
+		if obj.IsHold() {
+			holds++
+		}
+	}
+	return holds
+}
+
+// TotalObjects returns the total number of hit objects in the beatmap
+func (b *Beatmap) TotalObjects() int {
+	return len(b.HitObjects)
+}
+
 // BPMs returns a slice of all the BPMs in the beatmap
 func (b *Beatmap) BPMs() []float64 {
 	bpms := make([]float64, 0)
