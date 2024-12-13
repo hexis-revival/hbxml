@@ -35,6 +35,69 @@ func (b *Beatmap) FormatName() string {
 	return fmt.Sprintf("%s - %s [%s]", b.Meta.Artist, b.Meta.Title, b.Meta.Creator)
 }
 
+// BPMs returns a slice of all the BPMs in the beatmap
+func (b *Beatmap) BPMs() []float64 {
+	bpms := make([]float64, 0)
+	for _, tp := range b.TimingPoints {
+		if !tp.Inherited {
+			bpms = append(bpms, tp.BPM)
+		}
+	}
+	return bpms
+}
+
+// MedianBPM returns the median BPM of the beatmap
+func (b *Beatmap) MedianBPM() float64 {
+	bpms := b.BPMs()
+	if len(bpms) == 0 {
+		return 0
+	}
+	return bpms[len(bpms)/2]
+}
+
+// AverageBPM returns the average BPM of the beatmap
+func (b *Beatmap) AverageBPM() float64 {
+	bpms := b.BPMs()
+	if len(bpms) == 0 {
+		return 0
+	}
+	var sum float64
+	for _, bpm := range bpms {
+		sum += bpm
+	}
+	return sum / float64(len(bpms))
+}
+
+// HighestBPM returns the highest BPM of the beatmap
+func (b *Beatmap) HighestBPM() float64 {
+	bpms := b.BPMs()
+	if len(bpms) == 0 {
+		return 0
+	}
+	highest := bpms[0]
+	for _, bpm := range bpms {
+		if bpm > highest {
+			highest = bpm
+		}
+	}
+	return highest
+}
+
+// LowestBPM returns the lowest BPM of the beatmap
+func (b *Beatmap) LowestBPM() float64 {
+	bpms := b.BPMs()
+	if len(bpms) == 0 {
+		return 0
+	}
+	lowest := bpms[0]
+	for _, bpm := range bpms {
+		if bpm < lowest {
+			lowest = bpm
+		}
+	}
+	return lowest
+}
+
 // Read a beatmap from an io.Reader
 func NewBeatmap(r io.Reader) (beatmap *Beatmap, err error) {
 	beatmap = new(Beatmap)
