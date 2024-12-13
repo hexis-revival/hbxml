@@ -72,25 +72,25 @@ type Combo struct {
 	Blue  int `xml:"blue,attr"`
 }
 
-// HitObject is a struct that represents the hit objects of a beatmap
-type HitObject struct {
-	Type       int      `xml:"type,attr"`
-	Offset     int      `xml:"offset,attr"`
-	X          int      `xml:"x,attr"`
-	Y          int      `xml:"y,attr"`
-	NewCombo   bool     `xml:"newCombo,attr"`
-	HitSound   string   `xml:"hitsound,attr"`
-	Curve      string   `xml:"curve,attr,omitempty"`
-	Length     float64  `xml:"length,attr,omitempty"`
-	Backtracks int      `xml:"backtracks,attr,omitempty"`
-	EndOffset  int      `xml:"endOffset,attr,omitempty"`
-	TickRate   int      `xml:"tickRate,attr,omitempty"`
-	Points     []Point  `xml:"point"`
-	HitSounds  []string `xml:"hit-sound"`
-}
-
 // Point is a struct that represents the points of a hit object
 type Point struct {
 	X int `xml:"x,attr"`
 	Y int `xml:"y,attr"`
+}
+
+// HitObject is a struct that represents the hit objects of a beatmap
+type HitObject struct {
+	Type       HitObjectType `xml:"type,attr"`
+	Offset     int           `xml:"offset,attr"`
+	X          int           `xml:"x,attr"`
+	Y          int           `xml:"y,attr"`
+	NewCombo   bool          `xml:"newCombo,attr"`
+	HitSound   string        `xml:"hitsound,attr"`
+	Curve      string        `xml:"curve,attr,omitempty"`
+	Length     float64       `xml:"length,attr,omitempty"`
+	Backtracks int           `xml:"backtracks,attr,omitempty"`
+	EndOffset  int           `xml:"endOffset,attr,omitempty"`
+	TickRate   int           `xml:"tickRate,attr,omitempty"`
+	Points     []Point       `xml:"point"`
+	HitSounds  []string      `xml:"hit-sound"`
 }
