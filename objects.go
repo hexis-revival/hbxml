@@ -2,14 +2,15 @@ package hbxml
 
 // Meta is a struct that represents the metadata of a beatmap
 type Meta struct {
-	Title        string `xml:"title,attr"`
-	Artist       string `xml:"artist,attr"`
-	Creator      string `xml:"creator,attr"`
-	Version      string `xml:"version,attr"`
-	BaseVersion  string `xml:"baseVersion,attr"`
-	Source       string `xml:"source,attr"`
-	MapSetID     string `xml:"mapSetId,attr"`
-	MapVersionID string `xml:"mapVersionId,attr"`
+	Title        string   `xml:"title,attr"`
+	Artist       string   `xml:"artist,attr"`
+	Creator      string   `xml:"creator,attr"`
+	Version      string   `xml:"version,attr"`
+	BaseVersion  string   `xml:"baseVersion,attr"`
+	Source       string   `xml:"source,attr"`
+	MapSetID     string   `xml:"mapSetId,attr"`
+	MapVersionID string   `xml:"mapVersionId,attr"`
+	Tags         []string `xml:"tags>tag"`
 }
 
 // General is a struct that represents the general settings of a beatmap
