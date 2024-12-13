@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beatmap version="1">
+	<meta title="A.06" artist="Linkin Park" creator="ProPlayer08" version="Normal" baseVersion="0" source="" mapSetId="47" mapVersionId="81">
+	</meta>
+	<general audioFilename="A.06.mp3" audioLeadIn="0" previewOffset="0" countdown="1" sampleSet="normal" stackLeniency="0.5" mode="0" letterboxDuringBreaks="false" />
+	<difficulty hpDrainRate="3" circleSize="3" overallDifficulty="2" approachRate="2" sliderMultiplier="0.8" sliderTickRate="2" />
+	<editor>
+	</editor>
+	<events>
+		<backgrounds>
+			<background offset="0" filename="Linkin_Park_017.jpg" />
+		</backgrounds>
+		<breaks>
+		</breaks>
+	</events>
+	<timing-points>
+		<timing-point inherited="false" offset="3482" bpm="150" timeSignature="4" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="false" offset="3482" bpm="150" timeSignature="4" sampleSet="2" customSampleSet="0" volume="60" special="true" />
+		<timing-point inherited="true" offset="6082" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="6682" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="7682" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="8082" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="9282" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="9682" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="11382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="11582" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="12582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="13382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="14582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="14982" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="15382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="15782" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="16582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="16882" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="17682" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="18182" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="18582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="19382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="20982" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="21782" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="22582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="23682" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="24182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="24582" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="25782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="26082" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="26982" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="27282" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="27782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="28082" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="28582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="28882" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="29781" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="30082" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="30582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="30881" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="31382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="31581" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="31782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="31981" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="32182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="32982" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="33682" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="34182" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="34582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="34982" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="35382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="35782" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="36182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="36382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="36582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="36782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="36982" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="37382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="38182" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="38582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="39382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="40182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="40582" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="40982" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="41382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="41382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="42582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="42982" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="43382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="43782" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="44182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="44582" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="44982" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="45382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="45782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="46182" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="46582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="47282" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="48182" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="48382" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="48582" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="48782" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="48982" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="49182" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="49382" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="49582" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="49782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="49882" sliderMultiplier="1" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="true" offset="53682" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="53782" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="53882" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+	</timing-points>
+	<hit-objects>
+		<hit-object type="2" offset="5082" x="64" y="96" newCombo="false" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="144" y="80" />
+			<point x="240" y="96" />
+			<point x="224" y="96" />
+		</hit-object>
+		<hit-object type="1" offset="6282" x="288" y="192" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="6882" x="160" y="304" newCombo="false" hitsound="0" curve="p" length="120" backtracks="0">
+			<point x="144" y="240" />
+			<point x="144" y="208" />
+			<point x="160" y="192" />
+			<point x="160" y="176" />
+		</hit-object>
+		<hit-object type="1" offset="7882" x="192" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="8282" x="304" y="64" newCombo="true" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="352" y="112" />
+			<point x="352" y="208" />
+		</hit-object>
+		<hit-object type="8" offset="9482" x="256" y="240" newCombo="false" hitsound="0" endOffset="9882" tickRate="4" />
+		<hit-object type="8" offset="10282" x="160" y="176" newCombo="false" hitsound="0" endOffset="11082" tickRate="4" />
+		<hit-object type="2" offset="11482" x="256" y="240" newCombo="true" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="320" y="272" />
+			<point x="336" y="272" />
+		</hit-object>
+		<hit-object type="2" offset="12682" x="160" y="304" newCombo="false" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="144" y="256" />
+			<point x="176" y="144" />
+		</hit-object>
+		<hit-object type="1" offset="13882" x="256" y="80" newCombo="false" hitsound="8" />
+		<hit-object type="2" offset="14682" x="464" y="144" newCombo="true" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="480" y="64" />
+			<point x="480" y="64" />
+		</hit-object>
+		<hit-object type="2" offset="15482" x="384" y="128" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="384" y="48" />
+		</hit-object>
+		<hit-object type="8" offset="16282" x="288" y="96" newCombo="false" hitsound="0" endOffset="16682" tickRate="4" />
+		<hit-object type="1" offset="17082" x="240" y="192" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="17482" x="144" y="144" newCombo="false" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="224" y="112" />
+			<point x="224" y="112" />
+		</hit-object>
+		<hit-object type="2" offset="18682" x="48" y="208" newCombo="true" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="64" y="288" />
+			<point x="144" y="320" />
+		</hit-object>
+		<hit-object type="8" offset="19882" x="192" y="224" newCombo="false" hitsound="0" endOffset="20282" tickRate="4" />
+		<hit-object type="1" offset="20682" x="288" y="272" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="21082" x="384" y="224" newCombo="false" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="288" y="160" />
+			<point x="256" y="176" />
+		</hit-object>
+		<hit-object type="4" offset="22282" x="256" y="192" newCombo="true" hitsound="0" endOffset="23882" />
+		<hit-object type="2" offset="24282" x="176" y="192" newCombo="false" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="144" y="144" />
+			<point x="144" y="112" />
+		</hit-object>
+		<hit-object type="1" offset="25482" x="240" y="272" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="25882" x="320" y="192" newCombo="false" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="320" y="144" />
+			<point x="352" y="112" />
+		</hit-object>
+		<hit-object type="8" offset="27082" x="384" y="288" newCombo="false" hitsound="0" endOffset="27482" tickRate="4" />
+		<hit-object type="2" offset="27882" x="432" y="192" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="384" y="160" />
+			<point x="352" y="160" />
+		</hit-object>
+		<hit-object type="2" offset="28682" x="272" y="96" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="320" y="64" />
+			<point x="352" y="64" />
+		</hit-object>
+		<hit-object type="1" offset="29482" x="384" y="160" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="29882" x="288" y="208" newCombo="false" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="320" y="272" />
+			<point x="336" y="288" />
+		</hit-object>
+		<hit-object type="1" offset="31082" x="327" y="77" newCombo="true" hitsound="0" />
+		<hit-object type="2" offset="31482" x="394" y="194" newCombo="false" hitsound="8" curve="p" length="40" backtracks="0">
+			<point x="426" y="242" />
+		</hit-object>
+		<hit-object type="2" offset="31882" x="358" y="254" newCombo="false" hitsound="0" curve="p" length="40" backtracks="0">
+			<point x="310" y="286" />
+		</hit-object>
+		<hit-object type="2" offset="32282" x="305" y="290" newCombo="false" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="305" y="370" />
+			<point x="385" y="370" />
+		</hit-object>
+		<hit-object type="1" offset="33482" x="169" y="355" newCombo="false" hitsound="2" />
+		<hit-object type="8" offset="33882" x="176" y="256" newCombo="true" hitsound="0" endOffset="34282" tickRate="4" />
+		<hit-object type="8" offset="34682" x="112" y="160" newCombo="false" hitsound="0" endOffset="35082" tickRate="4" />
+		<hit-object type="2" offset="35482" x="96" y="48" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="160" y="48" />
+			<point x="176" y="64" />
+		</hit-object>
+		<hit-object type="2" offset="36282" x="176" y="160" newCombo="false" hitsound="0" curve="p" length="40" backtracks="3">
+			<point x="176" y="208" />
+		</hit-object>
+		<hit-object type="2" offset="37482" x="286" y="117" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="344" y="194" />
+		</hit-object>
+		<hit-object type="2" offset="38282" x="243" y="120" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="176" y="168" />
+		</hit-object>
+		<hit-object type="2" offset="39082" x="141" y="241" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="64" y="190" />
+		</hit-object>
+		<hit-object type="1" offset="39882" x="96" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="40282" x="208" y="96" newCombo="true" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="272" y="48" />
+		</hit-object>
+		<hit-object type="2" offset="41082" x="352" y="80" newCombo="false" hitsound="0" curve="p" length="80" backtracks="1">
+			<point x="368" y="112" />
+			<point x="368" y="160" />
+		</hit-object>
+		<hit-object type="8" offset="42282" x="256" y="144" newCombo="false" hitsound="0" endOffset="42682" tickRate="4" />
+		<hit-object type="1" offset="43082" x="144" y="128" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="43482" x="112" y="240" newCombo="true" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="160" y="288" />
+			<point x="176" y="288" />
+		</hit-object>
+		<hit-object type="2" offset="44282" x="272" y="272" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="336" y="288" />
+			<point x="352" y="272" />
+		</hit-object>
+		<hit-object type="1" offset="45082" x="352" y="176" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="45482" x="288" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="45882" x="176" y="80" newCombo="false" hitsound="0" curve="p" length="80" backtracks="0">
+			<point x="112" y="96" />
+			<point x="96" y="112" />
+		</hit-object>
+		<hit-object type="2" offset="46682" x="160" y="192" newCombo="false" hitsound="0" curve="p" length="160" backtracks="0">
+			<point x="224" y="240" />
+			<point x="288" y="208" />
+		</hit-object>
+		<hit-object type="1" offset="47882" x="272" y="96" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="48282" x="318" y="269" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="48682" x="214" y="267" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="49082" x="211" y="157" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="49482" x="315" y="161" newCombo="false" hitsound="0" />
+		<hit-object type="4" offset="49982" x="256" y="192" newCombo="true" hitsound="4" endOffset="53982" />
+	</hit-objects>
+</beatmap>

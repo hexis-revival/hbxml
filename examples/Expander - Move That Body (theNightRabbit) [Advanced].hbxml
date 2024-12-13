@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beatmap version="1">
+	<meta title="Move That Body" artist="Expander" creator="theNightRabbit" version="Advanced" baseVersion="2" source="jubeat saucer" mapSetId="48" mapVersionId="82">
+	</meta>
+	<general audioFilename="Expander - Move That Body.mp3" audioLeadIn="2000" previewOffset="0" countdown="0" sampleSet="normal" stackLeniency="0.3" mode="0" letterboxDuringBreaks="false" />
+	<difficulty hpDrainRate="7" circleSize="3" overallDifficulty="8" approachRate="9" sliderMultiplier="1.4" sliderTickRate="2" />
+	<editor>
+	</editor>
+	<events>
+		<backgrounds>
+			<background offset="0" filename="movethat-body.png" />
+		</backgrounds>
+		<breaks>
+		</breaks>
+	</events>
+	<timing-points>
+		<timing-point inherited="false" offset="870" bpm="196" timeSignature="4" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="33290" sliderMultiplier="0.75" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="33903" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="39030" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="39107" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="39336" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="39413" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="39643" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="39719" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="48826" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="48903" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="49132" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="49209" sliderMultiplier="1.25" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="49438" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="50" special="false" />
+		<timing-point inherited="true" offset="49515" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="59539" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="59616" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="69413" sliderMultiplier="0.75" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="82576" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="83140" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="83216" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="83446" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="0" special="false" />
+		<timing-point inherited="true" offset="83523" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="false" />
+		<timing-point inherited="true" offset="84135" sliderMultiplier="1" sampleSet="1" customSampleSet="0" volume="100" special="true" />
+	</timing-points>
+	<colors>
+		<combo red="0" green="0" blue="234" />
+		<combo red="65" green="197" blue="197" />
+		<combo red="112" green="0" blue="168" />
+	</colors>
+	<hit-objects>
+		<hit-object type="1" offset="2094" x="476" y="212" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="2553" x="364" y="88" newCombo="false" hitsound="0" />
+	</hit-objects>
+</beatmap>

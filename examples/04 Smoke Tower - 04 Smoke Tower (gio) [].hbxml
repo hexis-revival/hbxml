@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beatmap version="1">
+	<meta title="04 Smoke Tower" artist="04 Smoke Tower" creator="gio" version="" baseVersion="5" source="" mapSetId="4" mapVersionId="10">
+	</meta>
+	<general audioFilename="04 Smoke Tower.mp3" audioLeadIn="0" previewOffset="0" countdown="0" sampleSet="normal" stackLeniency="2" mode="0" letterboxDuringBreaks="false" />
+	<difficulty hpDrainRate="5" circleSize="3" overallDifficulty="7" approachRate="9" sliderMultiplier="1.8" sliderTickRate="1" />
+	<editor>
+	</editor>
+	<events>
+		<breaks>
+		</breaks>
+	</events>
+	<timing-points>
+		<timing-point inherited="false" offset="4609" bpm="205" timeSignature="4" sampleSet="1" customSampleSet="0" volume="100" pitch="10" special="false" />
+	</timing-points>
+	<colors>
+		<combo red="255" green="68" blue="68" />
+		<combo red="89" green="192" blue="235" />
+		<combo red="153" green="204" blue="0" />
+		<combo red="247" green="203" blue="56" />
+	</colors>
+	<hit-objects>
+		<hit-object type="2" offset="4609" x="224" y="64" newCombo="true" hitsound="0" curve="b" length="90" backtracks="0">
+			<point x="160" y="64" />
+			<point x="160" y="160" />
+		</hit-object>
+		<hit-object type="2" offset="4901" x="352" y="256" newCombo="false" hitsound="0" curve="b" length="90" backtracks="0">
+			<point x="416" y="256" />
+			<point x="416" y="192" />
+		</hit-object>
+		<hit-object type="1" offset="5193" x="352" y="96" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="5339" x="288" y="160" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="5485" x="224" y="224" newCombo="false" hitsound="0" />
+		<hit-object type="4" offset="5779" x="256" y="192" newCombo="true" hitsound="0" endOffset="7243" />
+	</hit-objects>
+</beatmap>

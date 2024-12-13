@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beatmap version="1">
+	<meta title="NANO DEATH!!!!!" artist="LeaF" creator="NerdNerdTewt" version="Death" baseVersion="4" source="" mapSetId="260" mapVersionId="400">
+	</meta>
+	<general audioFilename="NANO DEATH!!!!!.mp3" audioLeadIn="0" previewOffset="0" countdown="0" sampleSet="normal" stackLeniency="0.5" mode="0" letterboxDuringBreaks="false" />
+	<difficulty hpDrainRate="6" circleSize="4" overallDifficulty="8" approachRate="9" sliderMultiplier="1.8" sliderTickRate="1" />
+	<editor>
+	</editor>
+	<events>
+		<backgrounds>
+		</backgrounds>
+		<breaks>
+			<break offset="26186" endOffset="26975" />
+		</breaks>
+	</events>
+	<timing-points>
+		<timing-point inherited="false" offset="1400" bpm="170" timeSignature="4" sampleSet="2" customSampleSet="0" volume="60" special="false" />
+		<timing-point inherited="false" offset="25400" bpm="200" timeSignature="4" sampleSet="1" customSampleSet="0" volume="70" special="false" />
+		<timing-point inherited="false" offset="27575" bpm="240" timeSignature="4" sampleSet="1" customSampleSet="0" volume="70" special="false" />
+		<timing-point inherited="false" offset="27825" bpm="240" timeSignature="4" sampleSet="1" customSampleSet="0" volume="70" special="false" />
+	</timing-points>
+	<hit-objects>
+		<hit-object type="2" offset="25400" x="256" y="192" newCombo="false" hitsound="0" curve="p" length="22" backtracks="15">
+			<point x="256" y="160" />
+		</hit-object>
+		<hit-object type="2" offset="27575" x="304" y="141" newCombo="true" hitsound="0" curve="p" length="60" backtracks="1">
+			<point x="356" y="152" />
+			<point x="387" y="142" />
+		</hit-object>
+		<hit-object type="2" offset="27825" x="165" y="74" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="160" y="138" />
+			<point x="180" y="201" />
+		</hit-object>
+		<hit-object type="2" offset="28075" x="346" y="74" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="351" y="138" />
+			<point x="331" y="201" />
+		</hit-object>
+		<hit-object type="2" offset="28325" x="88" y="212" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="128" y="253" />
+			<point x="197" y="267" />
+		</hit-object>
+		<hit-object type="2" offset="28575" x="423" y="212" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="383" y="253" />
+			<point x="314" y="267" />
+		</hit-object>
+		<hit-object type="2" offset="28825" x="160" y="266" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="144" y="155" />
+		</hit-object>
+		<hit-object type="2" offset="29075" x="351" y="266" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="367" y="155" />
+		</hit-object>
+		<hit-object type="2" offset="29325" x="72" y="159" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="93" y="120" />
+			<point x="133" y="100" />
+		</hit-object>
+		<hit-object type="1" offset="29575" x="428" y="99" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="29700" x="255" y="191" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="29825" x="392" y="334" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="425" y="302" />
+			<point x="440" y="245" />
+		</hit-object>
+		<hit-object type="2" offset="30075" x="119" y="334" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="86" y="302" />
+			<point x="71" y="245" />
+		</hit-object>
+		<hit-object type="2" offset="30325" x="155" y="256" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="172" y="152" />
+		</hit-object>
+		<hit-object type="2" offset="30575" x="356" y="256" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="339" y="152" />
+		</hit-object>
+		<hit-object type="1" offset="30825" x="144" y="80" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="30950" x="368" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31075" x="368" y="304" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31200" x="144" y="304" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31325" x="256" y="124" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="31450" x="323" y="192" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31575" x="255" y="259" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31700" x="188" y="191" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="31825" x="352" y="160" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="327" y="246" />
+		</hit-object>
+		<hit-object type="2" offset="32075" x="160" y="160" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="184" y="246" />
+		</hit-object>
+		<hit-object type="2" offset="32325" x="432" y="288" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="351" y="328" />
+		</hit-object>
+		<hit-object type="2" offset="32575" x="80" y="288" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="160" y="328" />
+		</hit-object>
+		<hit-object type="2" offset="32825" x="256" y="352" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="256" y="240" />
+		</hit-object>
+		<hit-object type="2" offset="33075" x="256" y="32" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="256" y="144" />
+		</hit-object>
+		<hit-object type="2" offset="33325" x="336" y="112" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="419" y="71" />
+		</hit-object>
+		<hit-object type="1" offset="33575" x="96" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="33700" x="288" y="224" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="33825" x="128" y="256" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="33887" x="128" y="256" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="33950" x="128" y="256" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34075" x="320" y="320" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="34137" x="320" y="320" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34200" x="320" y="320" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34325" x="384" y="128" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="34387" x="384" y="128" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34450" x="384" y="128" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34575" x="192" y="64" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="34637" x="223" y="106" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34700" x="271" y="134" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="34762" x="309" y="171" newCombo="false" hitsound="0" />
+		<hit-object type="2" offset="34825" x="343" y="214" newCombo="true" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="421" y="276" />
+		</hit-object>
+		<hit-object type="2" offset="35075" x="168" y="214" newCombo="false" hitsound="0" curve="p" length="90" backtracks="0">
+			<point x="90" y="276" />
+		</hit-object>
+		<hit-object type="1" offset="35325" x="256" y="336" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="35575" x="256" y="48" newCombo="true" hitsound="8" />
+	</hit-objects>
+</beatmap>
