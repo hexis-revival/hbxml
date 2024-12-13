@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beatmap version="1">
+	<meta title="Skyrim Theme (Metal Cover)" artist="Bogdan Vera" creator="Mara" version="Novice" baseVersion="0" source="" mapSetId="23" mapVersionId="38">
+	</meta>
+	<general audioFilename="skyrim.mp3" audioLeadIn="0" previewOffset="0" countdown="0" sampleSet="normal" stackLeniency="0.2" mode="0" letterboxDuringBreaks="false" />
+	<difficulty hpDrainRate="3" circleSize="2" overallDifficulty="4" approachRate="5" sliderMultiplier="0.5" sliderTickRate="2" />
+	<editor>
+	</editor>
+	<events>
+		<backgrounds>
+			<background offset="0" filename="skyrimm.jpg" />
+		</backgrounds>
+		<breaks>
+			<break offset="57258" endOffset="63958" />
+		</breaks>
+	</events>
+	<timing-points>
+		<timing-point inherited="false" offset="1258" bpm="200" timeSignature="4" sampleSet="1" customSampleSet="0" volume="50" special="false" />
+	</timing-points>
+	<colors>
+		<combo red="136" green="136" blue="136" />
+		<combo red="134" green="150" blue="204" />
+		<combo red="90" green="135" blue="128" />
+	</colors>
+	<hit-objects>
+		<hit-object type="2" offset="21958" x="256" y="192" newCombo="false" hitsound="0" curve="p" length="150" backtracks="1" endsounds="0|2|0">
+			<point x="256" y="352" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+			<hit-sound>0</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="24658" x="256" y="48" newCombo="false" hitsound="2" />
+		<hit-object type="2" offset="25558" x="176" y="176" newCombo="true" hitsound="0" curve="p" length="150" backtracks="1" endsounds="0|2|0">
+			<point x="160" y="256" />
+			<point x="96" y="272" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+			<hit-sound>0</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="28258" x="320" y="176" newCombo="false" hitsound="2" />
+		<hit-object type="8" offset="29158" x="256" y="48" newCombo="true" hitsound="0" endOffset="30058" tickRate="4" />
+		<hit-object type="1" offset="30958" x="192" y="176" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="31858" x="256" y="304" newCombo="false" hitsound="2" />
+		<hit-object type="2" offset="32758" x="400" y="256" newCombo="true" hitsound="0" curve="p" length="150" backtracks="1" endsounds="0|2|0">
+			<point x="480" y="224" />
+			<point x="480" y="224" />
+			<point x="512" y="160" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+			<hit-sound>0</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="35458" x="256" y="304" newCombo="false" hitsound="2" />
+		<hit-object type="8" offset="36358" x="160" y="192" newCombo="true" hitsound="0" endOffset="37258" tickRate="4" />
+		<hit-object type="8" offset="38158" x="176" y="48" newCombo="false" hitsound="2" endOffset="39058" tickRate="4" />
+		<hit-object type="8" offset="39958" x="256" y="176" newCombo="false" hitsound="0" endOffset="40858" tickRate="4" />
+		<hit-object type="8" offset="41758" x="400" y="192" newCombo="false" hitsound="2" endOffset="42658" tickRate="4" />
+		<hit-object type="2" offset="43558" x="320" y="320" newCombo="false" hitsound="0" curve="p" length="150" backtracks="0" endsounds="0|2">
+			<point x="208" y="320" />
+			<point x="176" y="304" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+		</hit-object>
+		<hit-object type="2" offset="45358" x="304" y="224" newCombo="false" hitsound="0" curve="p" length="150" backtracks="0" endsounds="0|2">
+			<point x="208" y="208" />
+			<point x="160" y="176" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+		</hit-object>
+		<hit-object type="2" offset="47158" x="304" y="112" newCombo="false" hitsound="0" curve="p" length="150" backtracks="0" endsounds="0|2">
+			<point x="208" y="80" />
+			<point x="160" y="48" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+		</hit-object>
+		<hit-object type="8" offset="48958" x="64" y="160" newCombo="false" hitsound="0" endOffset="49858" tickRate="4" />
+		<hit-object type="1" offset="50758" x="192" y="80" newCombo="true" hitsound="0" />
+		<hit-object type="1" offset="51958" x="368" y="192" newCombo="false" hitsound="2" />
+		<hit-object type="1" offset="53158" x="192" y="304" newCombo="false" hitsound="0" />
+		<hit-object type="4" offset="54358" x="256" y="192" newCombo="true" hitsound="4" endOffset="57058" />
+		<hit-object type="2" offset="65158" x="256" y="336" newCombo="true" hitsound="0" curve="p" length="150" backtracks="0" endsounds="0|2">
+			<point x="192" y="288" />
+			<point x="192" y="224" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="66958" x="256" y="80" newCombo="false" hitsound="0" />
+		<hit-object type="1" offset="67858" x="368" y="192" newCombo="false" hitsound="2" />
+		<hit-object type="8" offset="68458" x="368" y="288" newCombo="true" hitsound="0" endOffset="68758" tickRate="4" />
+		<hit-object type="8" offset="69358" x="272" y="320" newCombo="false" hitsound="2" endOffset="69658" tickRate="4" />
+		<hit-object type="2" offset="70258" x="176" y="320" newCombo="true" hitsound="0" curve="p" length="250" backtracks="0" endsounds="0|2">
+			<point x="80" y="240" />
+			<point x="96" y="128" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+		</hit-object>
+		<hit-object type="2" offset="72358" x="160" y="48" newCombo="true" hitsound="0" curve="p" length="150" backtracks="1" endsounds="0|2|0">
+			<point x="240" y="32" />
+			<point x="304" y="48" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+			<hit-sound>0</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="75058" x="240" y="176" newCombo="false" hitsound="2" />
+		<hit-object type="2" offset="75958" x="368" y="256" newCombo="true" hitsound="0" curve="p" length="150" backtracks="1" endsounds="0|2|0">
+			<point x="448" y="176" />
+			<point x="448" y="144" />
+			<hit-sound>0</hit-sound>
+			<hit-sound>2</hit-sound>
+			<hit-sound>0</hit-sound>
+		</hit-object>
+		<hit-object type="1" offset="78658" x="256" y="144" newCombo="false" hitsound="2" />
+		<hit-object type="8" offset="79558" x="128" y="80" newCombo="false" hitsound="0" endOffset="80458" tickRate="2" />
+		<hit-object type="8" offset="81358" x="80" y="224" newCombo="false" hitsound="0" endOffset="82258" tickRate="2" />
+		<hit-object type="4" offset="82858" x="256" y="192" newCombo="true" hitsound="4" endOffset="86758" />
+	</hit-objects>
+</beatmap>
