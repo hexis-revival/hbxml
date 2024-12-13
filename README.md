@@ -41,8 +41,6 @@ func main() {
 
 ### Serializing a Beatmap
 
-To serialize a beatmap to an HBXML file:
-
 ```go
 package main
 
