@@ -1,5 +1,7 @@
 package hbxml
 
+import "math"
+
 // HitObject is a struct that represents the hit objects of a beatmap
 type HitObject struct {
 	Type        HitObjectType  `xml:"type,attr"`
@@ -35,6 +37,33 @@ func (h *HitObject) IsSpinner() bool {
 // IsHold returns true if the hit object is a hold
 func (h *HitObject) IsHold() bool {
 	return h.Type == Hold
+}
+
+// ComputeMaxCombo returns the maximum combo of the beatmap
+func (b *Beatmap) ComputeMaxCombo() int {
+	if len(b.TimingPoints) == 0 || len(b.HitObjects) == 0 {
+		return 0
+	}
+
+	sliderMultiplierPerBeat := b.Difficulty.SliderMultiplier * 100
+	tickLength := sliderMultiplierPerBeat / float64(b.Difficulty.SliderTickRate)
+	maxCombo := 0
+
+	for _, h := range b.HitObjects {
+		switch h.Type {
+		default:
+			maxCombo++
+		case Slider:
+			length := math.Floor(float64(h.Length) / tickLength * 100)
+			tickPerSide := int(math.Ceil(length/100) - 1)
+			maxCombo += (h.Backtracks+1)*(tickPerSide+1) + 1
+		case Hold:
+			// TODO: Implement hold objects
+			maxCombo++
+		}
+	}
+
+	return maxCombo
 }
 
 // TotalLength returns the total length of the beatmap in seconds
@@ -93,18 +122,4 @@ func (b *Beatmap) TotalHolds() int {
 // TotalObjects returns the total number of hit objects in the beatmap
 func (b *Beatmap) TotalObjects() int {
 	return len(b.HitObjects)
-}
-
-func (b *Beatmap) StartPosition() Point {
-	if len(b.HitObjects) == 0 {
-		return Point{}
-	}
-	return b.HitObjects[0].Points[0]
-}
-
-func (b *Beatmap) EndPosition() Point {
-	if len(b.HitObjects) == 0 {
-		return Point{}
-	}
-	return b.HitObjects[len(b.HitObjects)-1].Points[0]
 }
