@@ -94,3 +94,17 @@ func (b *Beatmap) TotalHolds() int {
 func (b *Beatmap) TotalObjects() int {
 	return len(b.HitObjects)
 }
+
+func (b *Beatmap) StartPosition() Point {
+	if len(b.HitObjects) == 0 {
+		return Point{}
+	}
+	return b.HitObjects[0].Points[0]
+}
+
+func (b *Beatmap) EndPosition() Point {
+	if len(b.HitObjects) == 0 {
+		return Point{}
+	}
+	return b.HitObjects[len(b.HitObjects)-1].Points[0]
+}
