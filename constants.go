@@ -17,3 +17,12 @@ const (
 	Finish  HitSoundType = 1 << iota
 	Clap    HitSoundType = 1 << iota
 )
+
+type CurveType string
+
+const (
+	LinearCurve      CurveType = "l"
+	CatmullCurve     CurveType = "c"
+	BezierCurve      CurveType = "b"
+	PassThroughCurve CurveType = "p"
+)

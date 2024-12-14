@@ -8,7 +8,7 @@ type HitObject struct {
 	Y           int            `xml:"y,attr"`
 	NewCombo    bool           `xml:"newCombo,attr"`
 	HitSound    HitSoundType   `xml:"hitsound,attr"`
-	Curve       string         `xml:"curve,attr,omitempty"`
+	Curve       CurveType      `xml:"curve,attr,omitempty"`
 	Length      float64        `xml:"length,attr,omitempty"`
 	Backtracks  int            `xml:"backtracks,attr,omitempty"`
 	EndOffset   int            `xml:"endOffset,attr,omitempty"`
