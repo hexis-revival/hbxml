@@ -8,8 +8,8 @@ type Meta struct {
 	Version      string   `xml:"version,attr"`
 	BaseVersion  string   `xml:"baseVersion,attr"`
 	Source       string   `xml:"source,attr"`
-	MapSetID     string   `xml:"mapSetId,attr"`
-	MapVersionID string   `xml:"mapVersionId,attr"`
+	MapSetID     int      `xml:"mapSetId,attr"`
+	MapVersionID int      `xml:"mapVersionId,attr"`
 	Tags         []string `xml:"tags>tag"`
 }
 
