@@ -14,7 +14,7 @@ type HitObject struct {
 	EndOffset   int            `xml:"endOffset,attr,omitempty"`
 	TickRate    int            `xml:"tickRate,attr,omitempty"`
 	Points      []Point        `xml:"point"`
-	HitSounds   []HitSoundType `xml:"hit-sound"`
+	Additions   []HitSoundType `xml:"hit-sound"`
 }
 
 // IsCircle returns true if the hit object is a circle
