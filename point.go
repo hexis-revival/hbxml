@@ -1,7 +1,7 @@
 package hbxml
 
-// Point is a struct that represents the points of a hit object
+// Point represents a point on the screen
 type Point struct {
-	X int `xml:"x,attr"`
-	Y int `xml:"y,attr"`
+	X float64 `xml:"x,attr"`
+	Y float64 `xml:"y,attr"`
 }
