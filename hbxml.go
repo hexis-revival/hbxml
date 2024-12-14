@@ -10,7 +10,7 @@ import (
 // ParseFromFile parses a beatmap file from the given filepath.
 func ParseFromFile(filepath string) (*Beatmap, error) {
 	if stat, err := os.Stat(filepath); err != nil || stat.IsDir() {
-		return nil, fmt.Errorf("hbxml: %s is not a valid file", filepath)
+		return nil, fmt.Errorf("hbxml: '%s' is not a valid file", filepath)
 	}
 
 	file, err := os.Open(filepath)
