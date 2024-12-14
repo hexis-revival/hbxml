@@ -32,7 +32,7 @@ func (b *Beatmap) Deserialize(r io.Reader) error {
 
 // FormatName returns a formatted string of the beatmap's name
 func (b *Beatmap) FormatName() string {
-	return fmt.Sprintf("%s - %s [%s]", b.Meta.Artist, b.Meta.Title, b.Meta.Creator)
+	return fmt.Sprintf("%s - %s (%s) [%s]", b.Meta.Artist, b.Meta.Title, b.Meta.Creator, b.Meta.Version)
 }
 
 // TotalCircles returns the total number of circles in the beatmap
@@ -163,6 +163,16 @@ func (b *Beatmap) BreakLength() float64 {
 		length += float64(brk.EndOffset-brk.Offset) / 1000
 	}
 	return length
+}
+
+func (b *Beatmap) MaxCombo() int {
+	var maxCombo int
+	for _, obj := range b.HitObjects {
+		if obj.IsCircle() || obj.IsSlider() {
+			maxCombo++
+		}
+	}
+	return maxCombo
 }
 
 // Read a beatmap from an io.Reader
