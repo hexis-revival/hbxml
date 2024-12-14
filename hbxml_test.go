@@ -13,6 +13,10 @@ func TestBeatmapDecoding(t *testing.T) {
 	}
 
 	for _, file := range exampleFiles {
+		if !strings.HasSuffix(file.Name(), ".hbxml") {
+			continue
+		}
+
 		file, err := os.Open("examples/" + file.Name())
 		if err != nil {
 			t.Error(err)
