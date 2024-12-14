@@ -18,7 +18,7 @@ func TestBeatmapDecoding(t *testing.T) {
 			continue
 		}
 
-		_, err = ParseFile(fmt.Sprintf("examples/%s", file.Name()))
+		_, err = ParseFromFile(fmt.Sprintf("examples/%s", file.Name()))
 		if err != nil {
 			t.Error(err)
 		}

@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-// ParseFile parses a beatmap file from the given filepath.
-func ParseFile(filepath string) (*Beatmap, error) {
+// ParseFromFile parses a beatmap file from the given filepath.
+func ParseFromFile(filepath string) (*Beatmap, error) {
 	if stat, err := os.Stat(filepath); err != nil || stat.IsDir() {
 		return nil, fmt.Errorf("hbxml: %s is not a valid file", filepath)
 	}
@@ -25,15 +25,15 @@ func ParseFile(filepath string) (*Beatmap, error) {
 		return nil, fmt.Errorf("hbxml: %s", err)
 	}
 
-	return ParseBytes(bytes)
+	return ParseFromBytes(bytes)
 }
 
-// ParseBytes parses a beatmap file from the given byte slice.
-func ParseBytes(bytes []byte) (*Beatmap, error) {
-	return ParseString(string(bytes))
+// ParseFromBytes parses a beatmap file from the given byte slice.
+func ParseFromBytes(bytes []byte) (*Beatmap, error) {
+	return ParseFromString(string(bytes))
 }
 
-// ParseString parses a beatmap file from the given string.
-func ParseString(str string) (*Beatmap, error) {
+// ParseFromString parses a beatmap file from the given string.
+func ParseFromString(str string) (*Beatmap, error) {
 	return NewBeatmap(strings.NewReader(str))
 }
