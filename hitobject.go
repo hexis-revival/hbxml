@@ -2,19 +2,19 @@ package hbxml
 
 // HitObject is a struct that represents the hit objects of a beatmap
 type HitObject struct {
-	Type       HitObjectType  `xml:"type,attr"`
-	Offset     int            `xml:"offset,attr"`
-	X          int            `xml:"x,attr"`
-	Y          int            `xml:"y,attr"`
-	NewCombo   bool           `xml:"newCombo,attr"`
-	HitSound   HitSoundType   `xml:"hitsound,attr"`
-	Curve      string         `xml:"curve,attr,omitempty"`
-	Length     float64        `xml:"length,attr,omitempty"`
-	Backtracks int            `xml:"backtracks,attr,omitempty"`
-	EndOffset  int            `xml:"endOffset,attr,omitempty"`
-	TickRate   int            `xml:"tickRate,attr,omitempty"`
-	Points     []Point        `xml:"point"`
-	HitSounds  []HitSoundType `xml:"hit-sound"`
+	Type        HitObjectType  `xml:"type,attr"`
+	StartOffset int            `xml:"offset,attr"`
+	X           int            `xml:"x,attr"`
+	Y           int            `xml:"y,attr"`
+	NewCombo    bool           `xml:"newCombo,attr"`
+	HitSound    HitSoundType   `xml:"hitsound,attr"`
+	Curve       string         `xml:"curve,attr,omitempty"`
+	Length      float64        `xml:"length,attr,omitempty"`
+	Backtracks  int            `xml:"backtracks,attr,omitempty"`
+	EndOffset   int            `xml:"endOffset,attr,omitempty"`
+	TickRate    int            `xml:"tickRate,attr,omitempty"`
+	Points      []Point        `xml:"point"`
+	HitSounds   []HitSoundType `xml:"hit-sound"`
 }
 
 // IsCircle returns true if the hit object is a circle
@@ -39,7 +39,7 @@ func (h *HitObject) IsHold() bool {
 
 // TotalLength returns the total length of the beatmap in seconds
 func (b *Beatmap) TotalLength() float64 {
-	return float64(b.HitObjects[len(b.HitObjects)-1].Offset) / 1000
+	return float64(b.HitObjects[len(b.HitObjects)-1].StartOffset) / 1000
 }
 
 // DrainLength returns the total length of the drain time in the beatmap in seconds
