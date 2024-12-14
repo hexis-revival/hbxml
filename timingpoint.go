@@ -12,8 +12,8 @@ type TimingPoint struct {
 	Special         bool    `xml:"special,attr"`
 }
 
-func (beatmap *Beatmap) GetTimingPoint(offset int) *TimingPoint {
-	for _, tp := range beatmap.TimingPoints {
+func (b *Beatmap) GetTimingPoint(offset int) *TimingPoint {
+	for _, tp := range b.TimingPoints {
 		if tp.Offset == offset {
 			return &tp
 		}
