@@ -1,6 +1,8 @@
 package hbxml
 
-import "math"
+import (
+	"math"
+)
 
 // HitObject is a struct that represents the hit objects of a beatmap
 type HitObject struct {
@@ -39,14 +41,43 @@ func (h *HitObject) IsHold() bool {
 	return h.Type == Hold
 }
 
+func (h *HitObject) ClosestTimingPoint(points []TimingPoint) *TimingPoint {
+	var closest *TimingPoint
+	for _, tp := range points {
+		if tp.Offset <= h.StartOffset {
+			if closest == nil || tp.Offset > closest.Offset {
+				closest = &tp
+			}
+		}
+	}
+	return closest
+}
+
+func (h *HitObject) SliderMultiplierPerBeat(b *Beatmap) float64 {
+	timingPoint := h.ClosestTimingPoint(b.TimingPoints)
+	sliderMultiplier := timingPoint.SliderMultiplier
+
+	if sliderMultiplier == 0 {
+		sliderMultiplier = 1.0
+	}
+
+	return b.Difficulty.SliderMultiplier * 100 * sliderMultiplier
+}
+
+func (h *HitObject) TickLength(b *Beatmap) float64 {
+	return h.SliderMultiplierPerBeat(b) / float64(b.Difficulty.SliderTickRate)
+}
+
+func (h *HitObject) TickPerSide(b *Beatmap) int {
+	length := math.Floor(float64(h.Length) / h.TickLength(b) * 100)
+	return int(math.Ceil(length/100) - 1)
+}
+
 // ComputeMaxCombo returns the maximum combo of the beatmap
 func (b *Beatmap) ComputeMaxCombo() int {
 	if len(b.TimingPoints) == 0 || len(b.HitObjects) == 0 {
 		return 0
 	}
-
-	sliderMultiplierPerBeat := b.Difficulty.SliderMultiplier * 100
-	tickLength := sliderMultiplierPerBeat / float64(b.Difficulty.SliderTickRate)
 	maxCombo := 0
 
 	for _, h := range b.HitObjects {
@@ -54,9 +85,7 @@ func (b *Beatmap) ComputeMaxCombo() int {
 		default:
 			maxCombo++
 		case Slider:
-			length := math.Floor(float64(h.Length) / tickLength * 100)
-			tickPerSide := int(math.Ceil(length/100) - 1)
-			maxCombo += (h.Backtracks+1)*(tickPerSide+1) + 1
+			maxCombo += (h.Backtracks+1)*(h.TickPerSide(b)+1) + 1
 		case Hold:
 			// TODO: Implement hold objects
 			maxCombo++

@@ -2,14 +2,15 @@ package hbxml
 
 // TimingPoint is a struct that represents the timing points of a beatmap
 type TimingPoint struct {
-	Inherited       bool    `xml:"inherited,attr"`
-	Offset          int     `xml:"offset,attr"`
-	BPM             float64 `xml:"bpm,attr"`
-	TimeSignature   int     `xml:"timeSignature,attr"`
-	SampleSet       int     `xml:"sampleSet,attr"`
-	CustomSampleSet int     `xml:"customSampleSet,attr"`
-	Volume          int     `xml:"volume,attr"`
-	Special         bool    `xml:"special,attr"`
+	Inherited        bool    `xml:"inherited,attr"`
+	Offset           int     `xml:"offset,attr"`
+	BPM              float64 `xml:"bpm,attr"`
+	SliderMultiplier float64 `xml:"sliderMultiplier,attr"`
+	TimeSignature    int     `xml:"timeSignature,attr"`
+	SampleSet        int     `xml:"sampleSet,attr"`
+	CustomSampleSet  int     `xml:"customSampleSet,attr"`
+	Volume           int     `xml:"volume,attr"`
+	Special          bool    `xml:"special,attr"`
 }
 
 func (b *Beatmap) GetTimingPoint(offset int) *TimingPoint {
