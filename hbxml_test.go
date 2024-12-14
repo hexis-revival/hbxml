@@ -1,6 +1,7 @@
 package hbxml
 
 import (
+	"fmt"
 	"os"
 	"strings"
 	"testing"
@@ -17,13 +18,7 @@ func TestBeatmapDecoding(t *testing.T) {
 			continue
 		}
 
-		file, err := os.Open("examples/" + file.Name())
-		if err != nil {
-			t.Error(err)
-		}
-		defer file.Close()
-
-		_, err = NewBeatmap(file)
+		_, err = ParseFile(fmt.Sprintf("examples/%s", file.Name()))
 		if err != nil {
 			t.Error(err)
 		}
