@@ -91,12 +91,9 @@ func (b *Beatmap) ComputeMaxCombo() int {
 		case Slider:
 			maxCombo += (h.Backtracks+1)*(h.TickPerSide(b)+1) + 1
 		case Hold:
-			tickRate := h.TickRate
-			if tickRate == 0 {
-				tickRate = 1
-			}
 			beatsPerSecond := b.MedianBPM() / 60
-			maxCombo += int(math.Ceil(h.HoldLength() * beatsPerSecond * float64(tickRate)))
+			result := h.HoldLength() * beatsPerSecond * float64(h.TickRate)
+			maxCombo += int(math.Ceil(result))
 		}
 	}
 
