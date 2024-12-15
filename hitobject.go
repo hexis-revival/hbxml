@@ -53,7 +53,20 @@ func (h *HitObject) ClosestTimingPoint(points []TimingPoint) *TimingPoint {
 	return closest
 }
 
-func (h *HitObject) SliderMultiplierPerBeat(b *Beatmap) float64 {
+func (h *HitObject) CurrentBPM(b *Beatmap) float64 {
+	var bpm float64
+	for _, tp := range b.TimingPoints {
+		if !tp.Inherited {
+			bpm = tp.BPM
+		}
+		if tp.Offset <= h.StartOffset {
+			break
+		}
+	}
+	return bpm
+}
+
+func (h *HitObject) SliderMultiplier(b *Beatmap) float64 {
 	timingPoint := h.ClosestTimingPoint(b.TimingPoints)
 	sliderMultiplier := timingPoint.SliderMultiplier
 
@@ -61,7 +74,11 @@ func (h *HitObject) SliderMultiplierPerBeat(b *Beatmap) float64 {
 		sliderMultiplier = 1.0
 	}
 
-	return b.Difficulty.SliderMultiplier * 100 * sliderMultiplier
+	return b.Difficulty.SliderMultiplier * sliderMultiplier
+}
+
+func (h *HitObject) SliderMultiplierPerBeat(b *Beatmap) float64 {
+	return h.SliderMultiplier(b) * 100
 }
 
 func (h *HitObject) TickLength(b *Beatmap) float64 {
@@ -74,7 +91,7 @@ func (h *HitObject) TickPerSide(b *Beatmap) int {
 }
 
 func (h *HitObject) HoldLength() float64 {
-	return float64(h.EndOffset-h.StartOffset) / 1000
+	return float64(h.EndOffset-h.StartOffset) / 1000.0
 }
 
 // ComputeMaxCombo returns the maximum combo of the beatmap
@@ -91,9 +108,9 @@ func (b *Beatmap) ComputeMaxCombo() int {
 		case Slider:
 			maxCombo += (h.Backtracks+1)*(h.TickPerSide(b)+1) + 1
 		case Hold:
-			beatsPerSecond := b.MedianBPM() / 60
-			result := h.HoldLength() * beatsPerSecond * float64(h.TickRate)
-			maxCombo += int(math.Ceil(result))
+			beatsPerSecond := h.CurrentBPM(b) / 60.0
+			combo := h.HoldLength() * beatsPerSecond * float64(h.TickRate)
+			maxCombo += int(math.Ceil(combo))
 		}
 	}
 
