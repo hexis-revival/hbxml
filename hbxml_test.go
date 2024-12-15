@@ -46,7 +46,7 @@ func TestCombo(t *testing.T) {
 			return
 		}
 		caclulatedCombo := b.ComputeMaxCombo()
-		difference := combo - caclulatedCombo
+		difference := caclulatedCombo - combo
 
 		if difference != 0 {
 			t.Errorf(
