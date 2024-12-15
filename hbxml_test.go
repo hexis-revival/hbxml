@@ -50,7 +50,7 @@ func TestCombo(t *testing.T) {
 
 		if difference != 0 {
 			t.Errorf(
-				"WARNING: Expected %d, got %d (%d): %s\n",
+				"Expected %d, got %d (%d): %s\n",
 				combo, caclulatedCombo, difference, b.FormatName(),
 			)
 		}
