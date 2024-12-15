@@ -110,7 +110,8 @@ func (b *Beatmap) ComputeMaxCombo() int {
 		case Hold:
 			beatsPerSecond := h.CurrentBPM(b) / 60.0
 			combo := h.HoldLength() * beatsPerSecond * float64(h.TickRate)
-			maxCombo += int(math.Ceil(combo))
+			remainder := math.Mod(combo, 1)
+			maxCombo += int(math.Ceil(combo + remainder))
 		}
 	}
 
