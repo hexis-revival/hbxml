@@ -42,7 +42,7 @@ func (h *HitObject) IsHold() bool {
 }
 
 func (h *HitObject) ClosestTimingPoint(points []TimingPoint) *TimingPoint {
-	var closest *TimingPoint
+	var closest *TimingPoint = &points[0]
 	for _, tp := range points {
 		if tp.Offset <= h.StartOffset {
 			if closest == nil || tp.Offset > closest.Offset {
