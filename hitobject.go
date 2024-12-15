@@ -73,6 +73,10 @@ func (h *HitObject) TickPerSide(b *Beatmap) int {
 	return int(math.Ceil(length/100) - 1)
 }
 
+func (h *HitObject) HoldLength() float64 {
+	return float64(h.EndOffset-h.StartOffset) / 1000
+}
+
 // ComputeMaxCombo returns the maximum combo of the beatmap
 func (b *Beatmap) ComputeMaxCombo() int {
 	if len(b.TimingPoints) == 0 || len(b.HitObjects) == 0 {
@@ -87,8 +91,12 @@ func (b *Beatmap) ComputeMaxCombo() int {
 		case Slider:
 			maxCombo += (h.Backtracks+1)*(h.TickPerSide(b)+1) + 1
 		case Hold:
-			// TODO: Implement hold objects
-			maxCombo++
+			tickRate := h.TickRate
+			if tickRate == 0 {
+				tickRate = 1
+			}
+			beatsPerSecond := b.MedianBPM() / 60
+			maxCombo += int(math.Ceil(h.HoldLength() * beatsPerSecond * float64(tickRate)))
 		}
 	}
 
