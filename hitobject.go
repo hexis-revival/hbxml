@@ -86,8 +86,8 @@ func (h *HitObject) TickLength(b *Beatmap) float64 {
 }
 
 func (h *HitObject) TickPerSide(b *Beatmap) int {
-	length := math.Floor(float64(h.Length) / h.TickLength(b) * 100)
-	return int(math.Ceil(length/100) - 1)
+	ticks := math.Floor(float64(h.Length) / h.TickLength(b) * 100)
+	return int(math.Ceil(ticks/100) - 1)
 }
 
 func (h *HitObject) HoldLength() float64 {
